@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="pics/favicon.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Bildbehandling</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <!--logga -->
+            <a href="index.html"><img src="pics/logo.svg" alt="logotyp"></a>
+
+            <!--Meny-knapp för att öppna dropdown meny-->
+            <button class="menu_button open" id="menu_open">
+                <span class="menu_icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu_text">Meny</span>
+            </button>
+            <!--dropdown meny och stäng-knappen -->
+            <nav class="drop_menu" id="drop_menu">
+                <button class="menu_button close" id="menu_close">
+                    <span class="menu_icon">
+                        <span class="bars crossing1"></span>
+                        <span class="bars crossing2"></span>
+                    </span>
+                    <span class="menu_text">Stäng</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">STARTSIDA</a></li>
+                    <li><a href="aboutme.html">OM MIG</a></li>
+                    <li><a href="imageedit.html">BILDBEHANDLING</a></li>
+                </ul>
+            </nav>
+
+            <!-- navigering för större skärm än 800px-->
+            <nav class="nav_bigscreen">
+                <ul>
+                    <li><a href="index.html"><strong>STARTSIDA</strong></a></li>
+                    <li><a href="aboutme.html"><strong>OM MIG</strong></a></li>
+                    <li><a href="imageedit.html"><strong>BILDBEHANDLING</strong></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <picture><!--tre "hero" -bilder med olika storlekar -->
+                <source media="(min-width: 1521px)" srcset="pics/stor_bild.jpg">
+                <source media="(min-width: 800px)" srcset="pics/mellan_bild.jpg">
+                <source srcset="pics/liten_bild.jpg">
+                <img src="pics/stor_bild.jpg" alt="" width="1920px" height="685px">
+            </picture>
+        </div>
+        <!--produkterna-->
+        <section class="products">
+            <h1>Senaste produkterna</h1>
+            <img src="" alt="" loading="lazy">
+            <img src="" alt="" loading="lazy">
+            <img src="" alt="" loading="lazy">
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

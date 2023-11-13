@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #BBC7A4;
+    box-shadow: 5px 5px 10px grey;
+    position: fixed;
+    min-width: 100%;
+}
+
+header img {
+    max-width: 175px;
+    max-height: 70px;
+    position: relative;
+    left: 2%;
+    top: 15%;
+}
+
+.nav_bigscreen {
+    display: none;
+}
+/*dropdown menyn*/
+.drop_menu {
+    background-color: #BBC7A4;
+    box-shadow: 0 0 10px;
+    width: 50%;
+    height:100vh;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: none;/* denna togglas mellan block och none för att visa och gömma menyn*/
+}
+
+.drop_menu ul {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.drop_menu ul li{
+    padding: 5%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.drop_menu ul li:hover {
+   background-color: #858f74;
+}
+
+.drop_menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+/*Meny-knappen för att öppna dropdown menyn*/
+.menu_button {
+    background-color: #BBC7A4;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: center;
+    padding: 10px 16px;
+    margin: 2%;
+    cursor: pointer;
+    display: flex;/*flexibel display för att öppna och stänga meny*/
+}
+
+.menu_button:hover {
+    background-color:#858f74;
+}
+
+.menu_icon {
+    margin-right: 10px;
+}
+
+/*hamburgemenyn*/
+.bars {
+    width: 20px;
+    height: 3px;
+    display: block;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.menu_text {
+    color: black;
+    font-size: 20px;
+}
+
+/*stänga meny-knappen*/
+.close {
+    margin: 2% 2%;
+}
+
+.crossing1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+    width: 25px;
+}
+
+.crossing2 {
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+    width: 25px;
+}
+
+@media (min-width:801px) {
+
+    .menu_button {
+        display: none;
+    }
+
+    .drop_menu {
+        display: none;
+    }
+
+    header .nav_bigscreen {
+        display: block;
+        float: right;
+        position: relative;
+        top: 35%;
+    }
+    
+    header .nav_bigscreen ul li {
+        list-style: none;
+        float: left;
+        position: relative;
+        right: 20%;
+    }
+
+    header .nav_bigscreen ul li:hover{
+        background-color: #858f74;
+    }
+    
+    header .nav_bigscreen ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 0 20px 0 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.products h1 {
+    text-align: center;
+    padding-top: 5%;
+    color: #E75A7C;
+    font-size: 36px;
+}
