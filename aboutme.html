@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="pics/favicon.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Bildbehandling</title>
 </head>
+
 <body>
-    
+    <main class="main_aboutme">
+        <header>
+            <!--logga -->
+            <a href="index.html"><img src="pics/logo.svg" alt="logotyp"></a>
+
+            <!--Meny-knapp för att öppna dropdown meny-->
+            <button class="menu_button open" id="menu_open">
+                <span class="menu_icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu_text">Meny</span>
+            </button>
+            <!--dropdown meny och stäng-knappen -->
+            <nav class="drop_menu" id="drop_menu">
+                <button class="menu_button close" id="menu_close">
+                    <span class="menu_icon">
+                        <span class="bars crossing1"></span>
+                        <span class="bars crossing2"></span>
+                    </span>
+                    <span class="menu_text">Stäng</span>
+                </button>
+                <ul>
+                    <li><a href="index.html">STARTSIDA</a></li>
+                    <li><a href="aboutme.html">OM MIG</a></li>
+                    <li><a href="imageedit.html">BILDBEHANDLING</a></li>
+                </ul>
+            </nav>
+
+            <!-- navigering för större skärm än 800px-->
+            <nav class="nav_bigscreen">
+                <ul>
+                    <li><a href="index.html"><strong>STARTSIDA</strong></a></li>
+                    <li><a href="aboutme.html"><strong>OM MIG</strong></a></li>
+                    <li><a href="imageedit.html"><strong>BILDBEHANDLING</strong></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <picture><!--tre "hero" -bilder med olika storlekar -->
+                <source media="(min-width: 1521px)" srcset="pics/stor_bild.jpg">
+                <source media="(min-width: 800px)" srcset="pics/mellan_bild.jpg">
+                <source srcset="pics/liten_bild.jpg">
+                <img src="pics/stor_bild.jpg" alt="" width="1920px" height="685px">
+            </picture>
+        </div>
+        <section class="aboutme">
+            <h1>Om mig</h1>
+        </section>
+        <section class="aboutme_image">
+            <img src="pics/portrait.png" alt="">
+        </section>
+        <section class="aboutme_text">
+            <h2>Anne-Lii Hansen</h2>
+            <p>Den här utbildningen passar mig som handen i handsken verkligen. Jag tycker att det är superkul och är ständigt taggad. 
+                Har jobbat som kvalitetskontrollant på ett hälsokostföretag i 12 år och hängt mest i labbet där jag analyserar råvaror och kemikalier. </p>
+                <h2>om uppgiften</h2>
+                <p>Det här har nog varit den svåraste uppgiften hittills då jag aldrig har jobbat i Photoshop innan. 
+                Det har verkligen varit svårt att lära sig så många olika moment och olika tekniker.</p>
+        </section>
+        <footer>
+            Laborationsuppgift för kursen DT200G, Grafisk teknik för webb.<br>
+            Copyright &copy; 2023 Anne-Lii Hansen
+        </footer>
+      
+    </main>
+    <script src="main.js"></script>
 </body>
+
 </html>
