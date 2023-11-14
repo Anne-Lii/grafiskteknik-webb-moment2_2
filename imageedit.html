@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="main_aboutme">
         <header>
             <!--logga -->
             <a href="index.html"><img src="pics/logo.svg" alt="logotyp"></a>
@@ -34,7 +34,7 @@
                         <span class="bars crossing1"></span>
                         <span class="bars crossing2"></span>
                     </span>
-                    <span class="menu_text">Stäng meny</span>
+                    <span class="menu_text">Stäng</span>
                 </button>
                 <ul>
                     <li><a href="index.html">STARTSIDA</a></li>
@@ -58,23 +58,45 @@
                 <source media="(min-width: 1521px)" srcset="pics/stor_bild.jpg">
                 <source media="(min-width: 800px)" srcset="pics/mellan_bild.jpg">
                 <source srcset="pics/liten_bild.jpg">
-                <img src="pics/stor_bild.jpg" alt="" width="1920" height="685">
+                <img src="pics/stor_bild.jpg" alt="solnedgång över vättern" width="1920" height="685">
             </picture>
         </div>
-        <!--produkterna-->
-        <section class="products">
-            <h1>Senaste produkterna</h1>
-            <img src="pics/frilaggning02.png" alt="" loading="lazy">
-            <img src="pics/frilaggning01.png" alt="" loading="lazy">
-            <img src="pics/frilaggning03.png" alt="" loading="lazy">
+        <section class="edit_image">
+            <h1>Bildbehandling</h1>
         </section>
+       
+        <section class="edit_image_adjustment">
+            <h2>Färgstick</h2>
+            <picture>
+                <source type="image/webp" srcset="pics/fargstick_fore.webp">
+                <img src="pics/fargstick_fore.jpg" alt="vinter mittuniversitetet gul bild" width="550" height="367">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="pics/fargstick.webp">
+                <img src="pics/fargstick.jpg" alt="vinter mittuniversitetet färgredigerad" width="550" height="367">
+            </picture>
+         </section>
+
+         <section class="edit_image_coloring">
+            <h2>Handkolorering och retusch</h2>
+            <picture>
+                <source type="image/webp" srcset="pics/handkolorering_fore.webp">
+                <img src="pics/handkolorering_fore.jpg" alt="svartvit bild på fyra barn i en släde bakom en häst" width="550" >
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="pics/handkolorering.webp">
+                <img src="pics/handkolorering.jpg" alt="färgredigerad bild på fyra barn i en släde bakom en häst" width="550">
+            </picture>
+         </section>
         <footer>
             <p>
-            Laborationsuppgift för kursen DT200G,<br>
-             Grafisk teknik för webb.<br>
-            Copyright &copy; 2023 Anne-Lii Hansen
-        </p>
+                Laborationsuppgift för kursen DT200G, <br>
+                Grafisk teknik för webb.<br>
+                Copyright &copy; 2023 Anne-Lii Hansen
+            </p>
+            
         </footer>
+
     </main>
     <script src="main.js"></script>
 </body>

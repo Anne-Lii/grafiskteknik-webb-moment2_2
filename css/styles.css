@@ -33,102 +33,107 @@ header img {
     display: none;
 }
 /*dropdown menyn*/
-.drop_menu {
-    background-color: #BBC7A4;
-    box-shadow: 0 0 10px;
-    width: 50%;
-    height:100vh;
-    position: absolute;
-    right: 0;
-    top: 10px;
-    display: none;/* denna togglas mellan block och none för att visa och gömma menyn*/
-}
+@media (max-width: 992px) {
+    .drop_menu {
+        background-color: #BBC7A4;
+        box-shadow: 0 0 10px;
+        width: 60%;
+        height:100vh;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        display: none;/* denna togglas mellan block och none för att visa och gömma menyn*/
+    }
 
-.drop_menu ul {
-    position: relative;
-    top: 80px;
-    width: 100%;
-    text-align: center;
-    list-style-type: none;
-}
+    .drop_menu ul {
+        position: relative;
+        top: 60px;
+        width: 90%;
+        text-align: center;
+        list-style-type: none;
+    }
 
-.drop_menu ul li{
-    padding: 5%;
-    width: 100%;
-    cursor: pointer;
-}
+    .drop_menu ul li{
+        padding: 5%;
+        width: 90%;
+        cursor: pointer;
+    }
 
-.drop_menu ul li:hover {
-   background-color: #858f74;
-}
+    .drop_menu ul li:hover {
+    background-color: #858f74;
+    }
 
-.drop_menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-}
+    .drop_menu ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+    }
 
-/*Meny-knappen för att öppna dropdown menyn*/
-.menu_button {
-    background-color: #BBC7A4;
-    position: absolute;
-    right: 0;
-    top: 0;
-    align-items: center;
-    padding: 10px 16px;
-    margin: 2%;
-    cursor: pointer;
-    display: flex;/*flexibel display för att öppna och stänga meny*/
-}
+    /*Meny-knappen för att öppna dropdown menyn*/
+    .menu_button {
+        background-color: #BBC7A4;
+        position: absolute;
+        right: 0;
+        top: 0;
+        align-items: center;
+        padding: 10px 16px;
+        margin: 2%;
+        cursor: pointer;
+        display: flex;/*flexibel display för att öppna och stänga meny*/
+    }
 
-.menu_button:hover {
-    background-color:#858f74;
-}
+    .menu_button:hover {
+        background-color:#858f74;
+    }
 
-.menu_icon {
-    margin-right: 10px;
-}
+    .menu_icon {
+        margin-right: 10px;
+    }
 
-/*hamburgemenyn*/
-.bars {
-    width: 20px;
-    height: 3px;
-    display: block;
-    background-color: black;
-    margin: 5px 0;
-}
+    /*hamburgemenyn*/
+    .bars {
+        width: 20px;
+        height: 3px;
+        display: block;
+        background-color: black;
+        margin: 5px 0;
+    }
 
-.menu_text {
-    color: black;
-    font-size: 20px;
-}
+    .menu_text {
+        color: black;
+        font-size: 20px;
+    }
 
-/*stänga meny-knappen*/
-.close {
-    margin: 2% 2%;
-}
+    /*stänga meny-knappen*/
+    .close {
+        margin: 2% 2%;
+        position: relative;
+        left: 5%;
+        top: 1%;
+    }
 
-.crossing1 {
-    transform: rotate(45deg);
-    position: relative;
-    top: 5px;
-    width: 25px;
-}
+    .crossing1 {
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+        width: 25px;
+    }
 
-.crossing2 {
-    transform: rotate(135deg);
-    position: relative;
-    top: -3px;
-    width: 25px;
+    .crossing2 {
+        transform: rotate(135deg);
+        position: relative;
+        top: -3px;
+        width: 25px;
+    }
 }
 
 @media (min-width:993px) {
 
-    .menu_button {
+    .drop_menu {
         display: none;
     }
 
-    .drop_menu {
+    .menu_button {
         display: none;
     }
 
@@ -180,8 +185,8 @@ header img {
     color: #E75A7C;
     font-size: 36px;
 }
-
-@media (max-width:992 px) {
+/*layout för mindre skärmar*/
+@media (max-width: 800px) {
 
     .main_aboutme {
         background-color: #f2f5ea;
