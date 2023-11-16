@@ -322,6 +322,7 @@ header img {
     .main_aboutme {
         width: 100%;
         max-width: 1920px;
+        margin: auto;
         background-color: #f2f5ea;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -812,6 +813,7 @@ header img {
 
     .aboutme_image img {
         border-radius: 300px;
+        width: 90%;
     }
 
     .aboutme_text {
