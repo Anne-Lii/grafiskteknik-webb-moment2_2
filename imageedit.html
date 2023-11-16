@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <main class="main_aboutme">
+    <main class="main_imageedit">
         <header>
             <!--logga -->
             <a href="index.html"><img src="pics/logo.svg" alt="logotyp"></a>
@@ -58,43 +58,57 @@
                 <source media="(min-width: 1521px)" srcset="pics/stor_bild.jpg">
                 <source media="(min-width: 800px)" srcset="pics/mellan_bild.jpg">
                 <source srcset="pics/liten_bild.jpg">
-                <img src="pics/stor_bild.jpg" alt="solnedgång över vättern" width="1920" height="685">
+                <img src="pics/stor_bild.jpg" alt="solnedgång över vättern">
             </picture>
         </div>
-        <section class="edit_image">
-            <h1>Bildbehandling</h1>
-        </section>
-       
-        <section class="edit_image_adjustment">
+
+        <div class="edit_image_h1">
+            <h1>Bildbehandling</h1>        
+        </div>
+        <div class="edit_image_h2">
             <h2>Färgstick</h2>
+        </div>
+
+        <div class="fargstic_fore">
             <picture>
                 <source type="image/webp" srcset="pics/fargstick_fore.webp">
-                <img src="pics/fargstick_fore.jpg" alt="vinter mittuniversitetet gul bild" width="550" height="367">
+                <img src="pics/fargstick_fore.jpg" alt="vinter mittuniversitetet gul bild" max-width="550"
+                    max-height="367">
             </picture>
+        </div>
+        <div class="fargstic_efter">
             <picture>
                 <source type="image/webp" srcset="pics/fargstick.webp">
-                <img src="pics/fargstick.jpg" alt="vinter mittuniversitetet färgredigerad" width="550" height="367">
+                <img src="pics/fargstick.jpg" alt="vinter mittuniversitetet färgredigerad" max-width="550"
+                    max-height="367">
             </picture>
-         </section>
+        </div>
 
-         <section class="edit_image_coloring">
-            <h2>Handkolorering och retusch</h2>
+        <section class="edit_coloring_h2">
+            <h2>Handkolorering</h2>
+        </section>
+        <div class="handkolorering_fore">
             <picture>
                 <source type="image/webp" srcset="pics/handkolorering_fore.webp">
-                <img src="pics/handkolorering_fore.jpg" alt="svartvit bild på fyra barn i en släde bakom en häst" width="550" >
+                <img src="pics/handkolorering_fore.jpg" alt="svartvit bild på fyra barn i en släde bakom en häst"
+                    max-width="550">
             </picture>
+        </div>
+        <div class="handkolorering_efter">
             <picture>
                 <source type="image/webp" srcset="pics/handkolorering.webp">
-                <img src="pics/handkolorering.jpg" alt="färgredigerad bild på fyra barn i en släde bakom en häst" width="550">
+                <img src="pics/handkolorering.jpg" alt="färgredigerad bild på fyra barn i en släde bakom en häst"
+                    max-width="550">
             </picture>
-         </section>
-        <footer>
+        </div>
+
+        <footer class="footer_editimage">
             <p>
                 Laborationsuppgift för kursen DT200G, <br>
                 Grafisk teknik för webb.<br>
                 Copyright &copy; 2023 Anne-Lii Hansen
             </p>
-            
+
         </footer>
 
     </main>

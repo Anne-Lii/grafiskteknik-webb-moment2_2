@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="main_index">
         <header>
             <!--logga -->
             <a href="index.html"><img src="pics/logo.svg" alt="logotyp"></a>
@@ -46,29 +46,40 @@
             <!-- navigering för större skärm än 800px-->
             <nav class="nav_bigscreen">
                 <ul>
-                    <li><a href="index.html"><strong>STARTSIDA</strong></a></li>
-                    <li><a href="aboutme.html"><strong>OM MIG</strong></a></li>
-                    <li><a href="imageedit.html"><strong>BILDBEHANDLING</strong></a></li>
+                    <li><a href="index.html">STARTSIDA</a></li>
+                    <li><a href="aboutme.html">OM MIG</a></li>
+                    <li><a href="imageedit.html">BILDBEHANDLING</a></li>
                 </ul>
             </nav>
         </header>
+
 
         <div class="hero">
             <picture><!--tre "hero" -bilder med olika storlekar -->
                 <source media="(min-width: 1521px)" srcset="pics/stor_bild.jpg">
                 <source media="(min-width: 800px)" srcset="pics/mellan_bild.jpg">
                 <source srcset="pics/liten_bild.jpg">
-                <img src="pics/stor_bild.jpg" alt="" width="1920" height="685">
+                <img src="pics/stor_bild.jpg" alt="">
             </picture>
         </div>
+
         <!--produkterna-->
-        <section class="products">
-            <h1>Senaste produkterna</h1>
-            <img src="pics/frilaggning02.png" alt="" loading="lazy">
-            <img src="pics/frilaggning01.png" alt="" loading="lazy">
-            <img src="pics/frilaggning03.png" alt="" loading="lazy">
-        </section>
-        <footer>
+    
+        <div class="prod_h1"><h1>Senaste produkterna</h1></div>
+        
+        <div class="prod_1"><img src="pics/frilaggning02.png" alt="" loading="lazy"></div>
+        <div class="prod_2"><img src="pics/frilaggning01.png" alt="" loading="lazy"></div>
+        <div class="prod_3"><img src="pics/frilaggning03.png" alt="" loading="lazy"></div>
+        
+
+       <section class="background">
+        <h2>Webbutvecklingsprogrammet <br> Mittuniversitetet</h2>
+        <button><strong>Sök här</strong></button>
+       </section>
+
+        <img src="pics/reklam_banner.gif" class="banner">
+    
+        <footer class="footer_index">
             <p>
             Laborationsuppgift för kursen DT200G,<br>
              Grafisk teknik för webb.<br>
