@@ -55,7 +55,7 @@ header {
     grid-column: 1 / 4;
     height: 100px;
     background-color: #BBC7A4;
-    box-shadow: 0 0 10px black;    
+    box-shadow: 0 0 10px black;
     z-index: 10;
 }
 
@@ -74,15 +74,17 @@ header img {
     .nav_bigscreen {
         display: none;
     }
+
     .drop_menu {
         background-color: #BBC7A4;
         box-shadow: 0 0 10px;
         width: 60%;
-        height:100vh;
+        height: 100vh;
         position: absolute;
         right: 0;
         top: 10px;
-        display: none;/* denna togglas mellan block och none för att visa och gömma menyn*/
+        display: none;
+        /* denna togglas mellan block och none för att visa och gömma menyn*/
     }
 
     .drop_menu ul {
@@ -93,14 +95,14 @@ header img {
         list-style-type: none;
     }
 
-    .drop_menu ul li{
+    .drop_menu ul li {
         padding: 5%;
         width: 90%;
         cursor: pointer;
     }
 
     .drop_menu ul li:hover {
-    background-color: #858f74;
+        background-color: #858f74;
     }
 
     .drop_menu ul li a {
@@ -119,11 +121,12 @@ header img {
         padding: 10px 16px;
         margin: 2%;
         cursor: pointer;
-        display: flex;/*flexibel display för att öppna och stänga meny*/
+        display: flex;
+        /*flexibel display för att öppna och stänga meny*/
     }
 
     .menu_button:hover {
-        background-color:#858f74;
+        background-color: #858f74;
     }
 
     .menu_icon {
@@ -167,7 +170,7 @@ header img {
     }
 }
 
-/*meny för skärmar över 993px*/
+/*navigeringsmeny för skärmar över 993px*/
 @media (min-width:993px) {
 
     .drop_menu {
@@ -184,7 +187,7 @@ header img {
         position: relative;
         top: 35%;
     }
-    
+
     header .nav_bigscreen ul li {
         list-style: none;
         float: left;
@@ -192,10 +195,10 @@ header img {
         right: 20%;
     }
 
-    header .nav_bigscreen ul li:hover{
+    header .nav_bigscreen ul li:hover {
         background-color: #858f74;
     }
-    
+
     header .nav_bigscreen ul li a {
         text-decoration: none;
         color: black;
@@ -218,7 +221,6 @@ header img {
         height: 100%;
     }
 
-
     /*startsidan 993px till 1920px*/
 
     .main_index {
@@ -227,50 +229,51 @@ header img {
         margin: auto;
         background-color: #f2f5ea;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: auto;    
+        grid-template-columns:1fr 1fr 1fr;
+        grid-auto-rows: auto;
     }
-
+    /*friläggningarna/produkterna*/
     .prod_h1 {
         grid-column: 1 / 4;
         margin: auto;
         padding: 5% 0 5% 0;
     }
 
-    .prod_1{
-        grid-column: 1 / 2;  
-        padding-bottom: 80px;  
+    .prod_1 {
+        grid-column: 1 / 2;
+        width: 100%;
+        padding-bottom: 80px;
     }
 
-    .prod_1 img{
+    .prod_1 img {
         float: right;
     }
 
     .prod_2 {
         grid-column: 2 / 3;
         margin: auto;
-        padding-bottom: 100px; 
+        padding-bottom: 80px;
     }
 
     .prod_3 {
-        grid-column: 3 / 4; 
-        padding-bottom: 80px;   
+        grid-column: 3 / 4;
+        width: 100%;
+        padding-bottom: 80px;
     }
 
-    .prod_3 img{
+    .prod_3 img {
         float: left;
     }
-
+    /*baskgrundsbilden med grön bakgrund*/
     .background {
         grid-column: 1 / 4;
         background-image: url("../pics/background.jpg");
         background-size: cover;
         margin: auto;
         background-repeat: no-repeat;
-        min-height:40vh;
+        min-height: 40vh;
         text-align: center;
         width: 100%;
-        height: 400px;    
     }
 
     .background h2 {
@@ -280,10 +283,10 @@ header img {
         padding: 150px 0 30px 0;
         text-shadow: 0px 0px 10px #2C363F;
     }
-
+    /*knappen på bakgrundsbilden*/
     .background button {
         color: white;
-    font-size: xx-large;
+        font-size: xx-large;
         box-shadow: 0 2px 10px -3px black;
         border: 4px solid white;
         background: none;
@@ -295,12 +298,11 @@ header img {
         cursor: pointer;
         background-color: #bbc7a4;
     }
-
-    .banner{
+    /*reklambanner*/
+    .banner {
         grid-column: 1 / 4;
         width: 50%;
         margin: auto;
-        
     }
 
     .footer_index {
@@ -322,8 +324,8 @@ header img {
         max-width: 1920px;
         background-color: #f2f5ea;
         display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-auto-rows: auto;  
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
     }
 
     .aboutme {
@@ -337,27 +339,25 @@ header img {
         margin: auto;
     }
 
-    .aboutme_image img{
-        border-radius: 300px; 
-        margin-bottom: 200px; 
+    .aboutme_image img {
+        border-radius: 300px;
+        margin-bottom: 200px;
     }
 
     .aboutme_text {
         grid-column: 2 / 3;
-        margin: auto;
-        margin-bottom: 200px; 
+        margin-bottom: 200px;
     }
 
-    .aboutme_text h2{
-    padding: 10px 0;
-    width: 80%;
-    text-align: center;
-    }
-
-    .aboutme_text p{
+    .aboutme_text h2 {
         padding: 10px 0;
         width: 80%;
         text-align: center;
+    }
+
+    .aboutme_text p {
+        padding: 10px 0;
+        width: 80%;
     }
 
     .footer_aboutme {
@@ -367,7 +367,7 @@ header img {
         text-align: center;
     }
 
-    .footer_aboutme p{
+    .footer_aboutme p {
         position: relative;
         top: 10px;
     }
@@ -380,8 +380,8 @@ header img {
         max-width: 1920px;
         background-color: #f2f5ea;
         display: grid;
-        grid-template-columns:50% 50%;
-        grid-auto-rows: auto;  
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
     }
 
     .edit_image_h1 {
@@ -395,23 +395,29 @@ header img {
         margin: auto;
         padding: 50px 0 50px 0;
     }
-
-    .fargstic_fore {
-        grid-column: 1 / 2;
-        margin: 0 auto;
+    /*redigerade bilder*/
+    .fargstic_fore,
+    .handkolorering_fore {
+        grid-column: 1 / 2;        
     }
 
-    .fargstic_fore img{
+    .fargstic_fore img {
+        width: 80%;
         max-width: 550px;
+        float: right;
+        margin-right: 2%;
     }
 
-    .fargstic_efter {
+    .fargstic_efter,
+    .handkolorering_efter {
         grid-column: 2 / 3;
-        margin:0 auto;
     }
 
-    .fargstic_efter img{
-    max-width: 550px;
+    .fargstic_efter img {
+        width: 80%;
+        max-width: 550px;
+        float: left;
+        margin-left: 2%;
     }
 
     .edit_coloring_h2 {
@@ -420,23 +426,19 @@ header img {
         margin: auto;
     }
 
-    .handkolorering_fore {
-        grid-column: 1 / 2;
-        margin: auto;
-    }
-
-    .handkolorering_fore img{
+    .handkolorering_fore img {
+        width: 80%;
         max-width: 550px;
+        float: right;
+        margin-right: 2%;
         padding-bottom: 100px;
     }
 
-    .handkolorering_efter {
-        grid-column: 2 / 3;
-        margin: auto;
-    }
-
-    .handkolorering_efter img{
+    .handkolorering_efter img {
+        width: 80%;
         max-width: 550px;
+        float: left;
+        margin-left: 2%;
         padding-bottom: 100px;
     }
 
@@ -447,7 +449,7 @@ header img {
         text-align: center;
     }
 
-    .footer_editimage p{
+    .footer_editimage p {
         position: relative;
         top: 10px;
     }
@@ -465,18 +467,16 @@ header img {
 
     .hero img {
         width: 100%;
-        
     }
 
     /*startsidan 601 - 992 pixlar*/
     .main_index {
-        width: 100%;
-        max-width: 992px;
+        max-width: 100%;
         margin: auto;
         background-color: #f2f5ea;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: auto;    
+        grid-template-columns:1fr 1fr 1fr;
+        grid-auto-rows: auto;
     }
 
     .prod_h1 {
@@ -485,28 +485,37 @@ header img {
         padding: 100px 0 80px 0;
     }
 
-    .prod_1{
-        grid-column: 1 / 2;  
-        padding-bottom: 80px;  
+    .prod_1 {
+        grid-column: 1 / 2;
+        width: 100%;
+        padding-bottom: 80px;
     }
 
-    .prod_1 img{
+    .prod_1 img {
         float: right;
+        width: 100%;
     }
 
     .prod_2 {
         grid-column: 2 / 3;
         margin: auto;
+        width: 100%;
         padding-bottom: 80px;
     }
 
-    .prod_3 {
-        grid-column: 3 / 4; 
-        padding-bottom: 80px;  
+    .prod_2 img {
+        width: 100%;
     }
 
-    .prod_3 img{
+    .prod_3 {
+        grid-column: 3 / 4;
+        width: 100%;
+        padding-bottom: 80px;
+    }
+
+    .prod_3 img {
         float: left;
+        width: 100%;
     }
 
     .background {
@@ -515,10 +524,9 @@ header img {
         background-size: cover;
         margin: auto;
         background-repeat: no-repeat;
-        min-height:40vh;
+        min-height: 40vh;
         text-align: center;
         width: 100%;
-        max-height: 400px;    
     }
 
     .background h2 {
@@ -531,7 +539,7 @@ header img {
 
     .background button {
         color: white;
-    font-size: xx-large;
+        font-size: xx-large;
         box-shadow: 0 2px 10px -3px black;
         border: 4px solid white;
         background: none;
@@ -544,11 +552,10 @@ header img {
         background-color: #bbc7a4;
     }
 
-    .banner{
+    .banner {
         grid-column: 1 / 4;
         width: 50%;
         margin: auto;
-        
     }
 
     .footer_index {
@@ -569,8 +576,8 @@ header img {
         max-width: 992px;
         background-color: #f2f5ea;
         display: grid;
-        grid-template-columns:1fr;
-        grid-auto-rows: auto;  
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
     }
 
     .aboutme {
@@ -584,24 +591,24 @@ header img {
         margin: auto;
     }
 
-    .aboutme_image img{
-        border-radius: 300px; 
+    .aboutme_image img {
+        border-radius: 300px;
     }
 
     .aboutme_text {
         grid-column: 1 / 2;
-         margin: auto; 
-         padding-bottom: 200px;
+        margin: auto;
+        padding-bottom: 200px;
     }
 
-    .aboutme_text h2{
-    padding: 80px 0 30px 0;
-    width: 80%;
-    margin: auto;
-    text-align: center;
+    .aboutme_text h2 {
+        padding: 80px 0 30px 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
     }
 
-    .aboutme_text p{
+    .aboutme_text p {
         width: 80%;
         margin: auto;
     }
@@ -613,20 +620,19 @@ header img {
         text-align: center;
     }
 
-    .footer_aboutme p{
+    .footer_aboutme p {
         position: relative;
         top: 10px;
     }
 
     /*bildbehandling-sidan 601 - 992 pixlar*/
-
     .main_imageedit {
         width: 100%;
         max-width: 992px;
         background-color: #f2f5ea;
         display: grid;
-        grid-template-columns:1fr;
-        grid-auto-rows: auto;  
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
     }
 
     .edit_image_h1 {
@@ -641,23 +647,22 @@ header img {
         padding: 100px 0 40px 0;
     }
 
-    .fargstic_fore {
+    .fargstic_fore,
+    .fargstic_efter,
+    .handkolorering_fore,
+    .handkolorering_efter {
         grid-column: 1 / 2;
         margin: 0 auto;
     }
 
-    .fargstic_fore img{
+    .fargstic_fore img,
+    .handkolorering_fore img {
         max-width: 550px;
         padding-bottom: 80px;
     }
 
-    .fargstic_efter {
-        grid-column: 1 / 2;
-        margin:0 auto;
-    }
-
-    .fargstic_efter img{
-    max-width: 550px;
+    .fargstic_efter img {
+        max-width: 550px;
     }
 
     .edit_coloring_h2 {
@@ -666,22 +671,7 @@ header img {
         margin: auto;
     }
 
-    .handkolorering_fore {
-        grid-column: 1 / 2;
-        margin: auto;
-    }
-
-    .handkolorering_fore img{
-        max-width: 550px;
-        padding-bottom: 80px;
-    }
-
-    .handkolorering_efter {
-        grid-column: 1 / 2;
-        margin: auto;
-    }
-
-    .handkolorering_efter img{
+    .handkolorering_efter img {
         max-width: 550px;
         padding-bottom: 150px;
     }
@@ -693,7 +683,7 @@ header img {
         text-align: center;
     }
 
-    .footer_editimage p{
+    .footer_editimage p {
         position: relative;
         top: 10px;
     }
@@ -701,7 +691,7 @@ header img {
 
 /*layout för mobiltelefoner upp till 600 pixlar*/
 @media (max-width: 600px) {
-    
+
     .hero {
         grid-column: 1 / 2;
         max-height: 585px;
@@ -719,7 +709,7 @@ header img {
         background-color: #f2f5ea;
         display: grid;
         grid-template-columns: 1fr;
-        grid-auto-rows: auto;    
+        grid-auto-rows: auto;
     }
 
     .prod_h1 {
@@ -728,10 +718,10 @@ header img {
         padding: 100px 0 80px 0;
     }
 
-    .prod_1{
-        grid-column: 1 / 2; 
-        margin: auto; 
-        padding-bottom: 80px;  
+    .prod_1 {
+        grid-column: 1 / 2;
+        margin: auto;
+        padding-bottom: 80px;
     }
 
     .prod_2 {
@@ -741,9 +731,9 @@ header img {
     }
 
     .prod_3 {
-        grid-column: 1 / 2; 
+        grid-column: 1 / 2;
         margin: auto;
-        padding-bottom: 80px;  
+        padding-bottom: 80px;
     }
 
     .background {
@@ -752,10 +742,10 @@ header img {
         background-size: cover;
         margin: auto;
         background-repeat: no-repeat;
-        min-height:40vh;
+        min-height: 40vh;
         text-align: center;
         width: 100%;
-        height: 400px;    
+        height: 400px;
     }
 
     .background h2 {
@@ -768,7 +758,7 @@ header img {
 
     .background button {
         color: white;
-    font-size: xx-large;
+        font-size: xx-large;
         box-shadow: 0 2px 10px -3px black;
         border: 4px solid white;
         background: none;
@@ -781,11 +771,10 @@ header img {
         background-color: #bbc7a4;
     }
 
-    .banner{
+    .banner {
         grid-column: 1 / 2;
         width: 90%;
         margin: auto;
-        
     }
 
     .footer_index {
@@ -806,8 +795,8 @@ header img {
         max-width: 600px;
         background-color: #f2f5ea;
         display: grid;
-        grid-template-columns:1fr;
-        grid-auto-rows: auto;  
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
     }
 
     .aboutme {
@@ -821,24 +810,24 @@ header img {
         margin: auto;
     }
 
-    .aboutme_image img{
-        border-radius: 300px; 
+    .aboutme_image img {
+        border-radius: 300px;
     }
 
     .aboutme_text {
         grid-column: 1 / 2;
-         margin: auto; 
-         padding-bottom: 200px;
+        margin: auto;
+        padding-bottom: 200px;
     }
 
-    .aboutme_text h2{
-    padding: 80px 0 30px 0;
-    width: 80%;
-    margin: auto;
-    text-align: center;
+    .aboutme_text h2 {
+        padding: 80px 0 30px 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
     }
 
-    .aboutme_text p{
+    .aboutme_text p {
         width: 80%;
         margin: auto;
     }
@@ -850,7 +839,7 @@ header img {
         text-align: center;
     }
 
-    .footer_aboutme p{
+    .footer_aboutme p {
         position: relative;
         top: 10px;
     }
@@ -863,8 +852,8 @@ header img {
         max-width: 600px;
         background-color: #f2f5ea;
         display: grid;
-        grid-template-columns:1fr;
-        grid-auto-rows: auto;  
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
     }
 
     .edit_image_h1,
@@ -877,13 +866,13 @@ header img {
     .fargstic_fore,
     .fargstic_efter {
         grid-column: 1 / 2;
-        
     }
 
     .fargstic_fore img,
-    .fargstic_efter img {
+    .fargstic_efter img,
+    .handkolorering_fore img {
         width: 80%;
-        margin-left:10%;
+        margin-left: 10%;
         padding-bottom: 20px;
     }
 
@@ -899,14 +888,9 @@ header img {
         margin: 0 auto;
     }
 
-    .handkolorering_fore img{
+    .handkolorering_efter img {
         width: 80%;
-        margin-left:10%;
-    }
-
-    .handkolorering_efter img{
-        width: 80%;
-        margin-left:10%;
+        margin-left: 10%;
         padding-bottom: 150px;
     }
 
@@ -917,10 +901,8 @@ header img {
         text-align: center;
     }
 
-    .footer_editimage p{
+    .footer_editimage p {
         position: relative;
         top: 10px;
     }
 }
-
-
